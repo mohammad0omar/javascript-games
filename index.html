@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="zoomin interface">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+    <link href="https://cdn.layerjs.org/libs/layerjs/layerjs-0.6.0.css" type="text/css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One'
+        rel='stylesheet' type='text/css'>
+    <title>Games</title>
+</head>
+
+<body lj-type="stage" class="cont">
+    <div lj-type="layer" lj-default-frame="zoomout" lj-layout="canvas">
+        <div lj-type="frame" id="zoomout" lj-fit-to="fixed">
+            <h1><a>Let's Play</a></h1>
+            <h2>A project by Mohammad Omar</h2>
+            <p>
+                Project done for a client side course in Lebanese International University.<br>
+                Library used : https://layerjs.org
+            </p>
+        </div>
+        <div lj-type="frame" id="zoomin" lj-fit-to="fixed" lj-scale="0.25">
+            <div lj-type="stage" id="contentstage">
+                <div lj-type="layer" id="contentlayer" lj-layout="canvas" lj-native-scroll="false">
+                    <div lj-type="frame" id="frame1" lj-fit-to="responsive" lj-neighbors.r="frame2">
+                        <a class="coverlink" href="#frame1;zoomin;minimenu.hamburger"></a>
+                        <iframe width="100%" height="100%" frameborder="0" src="game.html"></iframe>
+                    </div>
+                    <div lj-type="frame" id="frame2" lj-fit-to="responsive" lj-neighbors.l="frame1">
+                        <a class="coverlink" href="#frame2;zoomin;minimenu.hamburger"></a>
+                        <iframe width="100%" height="100%" frameborder="0" src="game1.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div lj-type="layer" id="minimenu" lj-default-frame="!none" lj-native-scroll="false">
+        <a href="#zoomout;frame1;minimenu.!none;" lj-type="frame" id="hamburger" lj-start-position="top"
+            lj-fit-to="fixed" lj-transition="down" onclick="relo()">
+            &#x2630;
+        </a>
+    </div>
+    <script src="https://cdn.layerjs.org/libs/layerjs/layerjs-0.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>layerJS.init();
+        function relo() {
+            let frames = document.getElementsByTagName("iframe");
+            frames[0].src = frames[0].src;
+            frames[1].src = frames[1].src;
+        }</script>
+</body>
+
+</html>

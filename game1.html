@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>game1</title>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One'
+          rel='stylesheet' type='text/css'>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div class="start  text-center  align-items-center justify-content-center">
+
+    <h1 onclick="start()"><a> The gallows Game</a>
+        <p>How to play: try to know what is the hidden word <br> Click to
+            continue</p></h1>
+
+</div>
+<div id="game">
+    <svg class="bar1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" >
+        <defs>
+            <path d="M500.87 378.12L500.87 97.42L151.98 100.38L156.92 378.12" id="epOUG4orR"></path>
+            <path d="M330.87 101.37C359.8 106.81 354.86 112.89 316.05 119.62C302.05 122.05 358.98 139.68 333.84 140.91C327.99 141.19 323.53 141.3 320 141.24C291.42 140.82 341.43 130.15 339.01 121.78C336.88 114.4 325.6 106.27 305.17 97.42"
+                  id="a3UEA8fydq"></path>
+            <path d="M326.42 156.72L326.42 141.26L326.42 156.72Z" id="k2UbqAO5ab"></path>
+            <path d="M353.6 181.92C353.6 195.83 341.43 207.13 326.42 207.13C311.42 207.13 299.24 195.83 299.24 181.92C299.24 168.01 311.42 156.72 326.42 156.72C341.43 156.72 353.6 168.01 353.6 181.92Z"
+                  id="dldKpe0nw"></path>
+            <path d="M339.4 207.13C344.92 207.13 349.4 211.61 349.4 217.13C349.4 233.31 349.4 271.87 349.4 288.06C349.4 293.58 344.92 298.06 339.4 298.06C332.56 298.06 322.02 298.06 315.17 298.06C309.65 298.06 305.17 293.58 305.17 288.06C305.17 271.87 305.17 233.31 305.17 217.13C305.17 211.61 309.65 207.13 315.17 207.13C322.02 207.13 332.56 207.13 339.4 207.13Z"
+                  id="c2hGeFXXpY"></path>
+            <path d="M387.7 217.01C391.8 217.01 395.12 220.33 395.12 224.42C395.12 226.03 395.12 223.45 395.12 225.06C395.12 229.16 391.8 232.48 387.7 232.48C379.3 232.48 361.51 232.48 353.11 232.48C349.02 232.48 345.7 229.16 345.7 225.06C345.7 223.45 345.7 226.03 345.7 224.42C345.7 220.33 349.02 217.01 353.11 217.01C361.51 217.01 379.3 217.01 387.7 217.01Z"
+                  id="asDAhdbx5"></path>
+            <path d="M337.64 330.56C336.49 330.56 335.56 329.63 335.56 328.48C335.56 320.67 335.56 299.29 335.56 291.47C335.56 290.32 336.49 289.4 337.64 289.4C339.99 289.4 344.97 289.4 347.33 289.4C348.47 289.4 349.4 290.32 349.4 291.47C349.4 299.29 349.4 320.67 349.4 328.48C349.4 329.63 348.47 330.56 347.33 330.56C344.97 330.56 339.99 330.56 337.64 330.56Z"
+                  id="czxNu7bDL"></path>
+            <path d="M301.83 217.01C305.93 217.01 309.24 220.33 309.24 224.42C309.24 226.03 309.24 223.45 309.24 225.06C309.24 229.16 305.93 232.48 301.83 232.48C293.43 232.48 275.64 232.48 267.24 232.48C263.14 232.48 259.83 229.16 259.83 225.06C259.83 223.45 259.83 226.03 259.83 224.42C259.83 220.33 263.14 217.01 267.24 217.01C275.64 217.01 293.43 217.01 301.83 217.01Z"
+                  id="b3EGlNjPrx"></path>
+            <path d="M308.24 330.56C307.09 330.56 306.16 329.63 306.16 328.48C306.16 320.67 306.16 299.29 306.16 291.47C306.16 290.32 307.09 289.4 308.24 289.4C310.59 289.4 315.57 289.4 317.92 289.4C319.07 289.4 320 290.32 320 291.47C320 299.29 320 320.67 320 328.48C320 329.63 319.07 330.56 317.92 330.56C315.57 330.56 310.59 330.56 308.24 330.56Z"
+                  id="g8YoVgGgp"></path>
+            <path d="M315.06 170.56L315.06 181.43" id="icfE6WPGa"></path>
+            <path d="M330.87 170.56L330.87 181.43" id="c1sR6xgOmp"></path>
+            <path d="M313.08 189.09L323.91 188.35L333.84 189.83L325.72 194.28" id="g2SDES8xmT"></path>
+        </defs>
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <use xlink:href="#epOUG4orR" opacity="1" fill-opacity="0" stroke="#852847" stroke-width="6"
+                             stroke-opacity="1"></use>
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <use xlink:href="#a3UEA8fydq" opacity="1" fill-opacity="0" stroke="#852847" stroke-width="5"
+                             stroke-opacity="1"></use>
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <use   xlink:href="#k2UbqAO5ab" opacity="1" fill-opacity="0" stroke="#852847" stroke-width="2"
+                             stroke-opacity="1"></use>
+                    </g>
+                </g>
+                <g>
+                    <use  id="1" xlink:href="#dldKpe0nw" opacity="1" fill="#776f6a" fill-opacity="1"></use>
+                </g>
+                <g>
+                    <use id="2" xlink:href="#c2hGeFXXpY" opacity="1" fill="#6b6b6b" fill-opacity="1"></use>
+                </g>
+                <g>
+                    <use id="3" xlink:href="#asDAhdbx5" opacity="1" fill="#66625e" fill-opacity="1"></use>
+                </g>
+                <g>
+                    <use id="5" xlink:href="#czxNu7bDL" opacity="1" fill="#66625e" fill-opacity="1"></use>
+                </g>
+                <g>
+                    <use id="4" xlink:href="#b3EGlNjPrx" opacity="1" fill="#66625e" fill-opacity="1"></use>
+                </g>
+                <g>
+                    <use id="6" xlink:href="#g8YoVgGgp" opacity="1" fill="#66625e" fill-opacity="1"></use>
+                </g>
+
+
+
+            </g>
+        </g>
+    </svg>
+        <h1 class="text-center text-danger" id="number1"></h1>
+    <form >
+        <input type="text" placeholder="enter a one char"  id="in" maxlength="1"  class="col-12 in  border-bottom" min="0" autofocus required>
+        <button class="btn-success btn-lg h-100 col-12 mt-2" type="submit">Check</button>
+        <button type="button" class="btn-danger btn-lg  mt-2 h-100 col-12" onclick="location.reload()">Restart</button>
+    </form>
+</div>
+<script src="script1.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
